@@ -93,7 +93,7 @@ Predictions & Visualization
 ## 📂 Project Structure
 
 ```text
-LOW_CODE_FRAMEWORK/
+Low-Code-Framework/
 │
 ├── sample_timeseries.csv        # Raw/sample time series dataset used as input for the EDA pipeline
 ├── cleaned_timeseries.csv      # Cleaned and processed output from EDA, used as input for forecasting models
