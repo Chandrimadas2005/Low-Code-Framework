@@ -12,7 +12,7 @@ This project is built using **Streamlit**, enabling users to interactively uploa
 This project follows a **structured two-stage workflow**:
 
 ```
-Sample Time Series Data
+Time Series Dataset
         ↓
 EDA & Preprocessing (Time_series_EDA.py)
         ↓
