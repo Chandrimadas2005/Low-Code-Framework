@@ -1,177 +1,82 @@
-# 🚀 Low-Code ML & Smart EDA Framework
+# 🚀 Categorical & Numerical Data EDA + AutoML
 
-A low-code machine learning and exploratory data analysis (EDA) framework that combines traditional data processing with LLM-powered automation to simplify end-to-end ML workflows.
-
----
-
-## 📌 Overview
-
-This project enables users to:
-
-* Upload datasets
-* Provide a problem statement in natural language
-* Automatically identify target & relevant features using LLM
-* Perform data cleaning and exploratory data analysis
-* Train machine learning models with minimal manual effort
+This module focuses on structured datasets (categorical & numerical) using a low-code pipeline that integrates LLM-based feature selection with automated machine learning.
 
 ---
 
-## 🔄 Workflow (How it works)
+## 📌 Workflow
 
 ```text
 Full Dataset + Problem Statement
             ↓
-Chatbot App (chatbot_app.py)
+Chatbot Interface (chatbot_app.py)
             ↓
 LLM Processing (llm_eda.py)
-→ Identifies target variable & important features
-→ Filters required rows & columns
+→ Identifies target variable
+→ Selects relevant features
+→ Filters dataset
             ↓
-New Optimized Dataset
+Optimized Dataset
             ↓
 EDA & Preprocessing (app.py + module.py)
 → Data cleaning
-→ Encoding & scaling
-→ Statistical insights
+→ Missing Data Handelling
+→ Outlier Detecting
+→ Encoding
+→ Feature scaling
+→ Statistical analysis and Visualisation
             ↓
 Processed Dataset
             ↓
-AutoML Pipeline (app.py + modules.py)
-→ Model training (in progress)
-→ Model selection & evaluation
+AutoML Pipeline (apps.py + modules.py)  (in progress)
+→ Train multiple models  (in progress)
+→ Compare performance  (in progress)
+→ Prediction & evaluation  (in progress)
+→ Visualization (in progress)
 ```
 
 ---
 
 ## ⚙️ Features
 
-### 🤖 LLM-Powered Automation
-
-* Identifies target variable automatically
-* Selects relevant features
-* Converts problem statements into ML tasks
-
-### 🧹 Data Preprocessing
-
-* Missing value handling
-* Outlier detection
-* Categorical encoding
-* Feature scaling
-
-### 📊 Smart EDA
-
-* Dataset statistics
-* Data profiling
-* Insight generation
-
-### ⚡ Machine Learning Models
-
-* Logistic Regression
-* Decision Tree
-* Random Forest
-* XGBoost / LightGBM / CatBoost
-* Support Vector Machine
-* Neural Networks
-
-### 💬 Interactive UI
-
-* Built with Streamlit
-* Chat-based user interaction
+* LLM-based feature & target selection
+* Automated preprocessing pipeline
+* Exploratory Data Analysis (EDA)
+* AutoML model training
+* Prediction & evaluation
 
 ---
 
-## 🏗️ Project Structure
+## 📂 Project Structure
 
-```bash
+```
 Low-Code-Framework/
 │
 ├── app.py                # EDA & preprocessing UI
-├── apps.py               # AutoML pipeline (in progress)
+├── apps.py               # AutoML pipeline UI (in progress)
 ├── chatbot_app.py        # Chatbot interface
 ├── llm_eda.py            # LLM-based feature/target selection
 ├── module.py             # Data preprocessing utilities
-├── modules.py            # ML model training
+├── modules.py            # ML models (in progress)
 ├── decisiontree.py       # Standalone ML script
 │
 ├── datasets/
-│   ├── weather_dataset.csv
-│   ├── weather_dataset_full.csv
-│   └── weather_dataset_missing.csv
+│   └── weather_dataset.csv
 ```
 
 ---
 
-## 🚀 Installation
+## ⚠️ Status
 
-```bash
-git clone https://github.com/your-username/Low-Code-Framework.git
-cd Low-Code-Framework
-pip install -r requirements.txt
-```
+* AutoML improvements → In progress
+* Visualization → In progress
 
 ---
 
-## ▶️ Usage (Step-by-step Workflow)
+## 🎯 Goal
 
-### 1️⃣ Start Chatbot (Define Problem)
+To build an end-to-end low-code ML system for structured datasets using LLM-driven automation.
 
-```bash
-streamlit run chatbot_app.py
-```
-
-* Enter your dataset
-* Provide a problem statement
-* LLM selects target & features
-* Generates a filtered dataset
-
----
-
-### 2️⃣ Run EDA & Preprocessing
-
-```bash
-streamlit run app.py
-```
-
-* Load filtered dataset
-* Perform cleaning, encoding, scaling
-* Analyze dataset insights
-
----
-
-### 3️⃣ Run AutoML Pipeline *(In Progress)*
-
-```bash
-streamlit run apps.py
-```
-
-* Train multiple ML models
-* Compare performance
-* Select best model
-
----
-
-## 🔑 Configuration
-
-```bash
-export GEMINI_API_KEY="your_api_key"
-```
-
----
-
-## 📊 Use Cases
-
-* Rapid ML prototyping
-* Automated EDA for beginners
-* Academic research experiments
-* Low-code ML pipelines
-
----
-
-## ⚠️ Notes
-
-* AutoML pipeline is currently under development
-* Model explainability (SHAP/LIME) can be added
-* UI improvements can enhance usability
 
 ---
 
