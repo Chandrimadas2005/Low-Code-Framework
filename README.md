@@ -172,7 +172,5 @@ Date, Value, Exogenous1, Exogenous2
 ## 👩‍💻 Contributor
 
 **Bratati Basu**
-Time Series EDA & Forecasting Module
-
 ---
 
