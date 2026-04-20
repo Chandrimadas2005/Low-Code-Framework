@@ -184,3 +184,4 @@ Chandrima Das
 ## 📄 License
 
 This project is proprietary and confidential. Unauthorized use, copying, or distribution is strictly prohibited.
+Internal / proprietary — Calsoft Pvt Ltd.
