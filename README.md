@@ -16,35 +16,28 @@ Time Series Dataset
 → sample_timeseries.csv
             ↓
 EDA & Visualization (Time_series_EDA.py)
-→ Time parsing & sorting
-→ Auto frequency detection & resampling
-→ Missing value handling (interpolation, forward/backward fill)
-→ Trend & seasonality extraction (seasonal decomposition)
-→ Residual-based outlier detection (IQR on residuals)
-→ Stationarity check (ADF test)
-→ Linear detrending (if non-stationary)
-→ Rolling average smoothing
-→ Window-based statistical analysis (mean, variance, std deviation)
+→ Time parsing & resampling (auto frequency)
+→ Missing value handling (interpolation, ffill/bfill)
+→ Trend & seasonality (decomposition)
+→ Residual-based outlier detection
+→ Stationarity check (ADF) + detrending
+→ Rolling smoothing & statistical analysis
             ↓
 Cleaned Dataset
 → cleaned_timeseries.csv
             ↓
 Forecasting Models (Forecasting_models.py)
-→ Train-test split (last 20%)
-→ Auto frequency inference
-→ ARIMA / SARIMA / SARIMAX (AIC-based tuning)
-→ Holt-Winters (Triple Exponential Smoothing)
-→ Rolling EWMA forecasting
-→ VAR (multivariate forecasting)
-→ Deep learning models (RNN, LSTM, GRU, TCN)
-→ Multi-step recursive forecasting
+→ Train-test split
+→ ARIMA/SARIMA/SARIMAX (AIC tuning)
+→ Holt-Winters & EWMA
+→ VAR (multivariate)
+→ Deep learning (RNN, LSTM, GRU, TCN)
+→ Multi-step forecasting
             ↓
 Prediction & Evaluation
-→ MAE-based validation
-→ Observed vs forecast visualization
-→ Multi-series plotting (for VAR)
-→ Forecasted future values
-→ Advanced visualization (in progress)
+→ MAE validation
+→ Forecast vs actual visualization
+→ Future predictions
 ```
 
 👉 **Key Idea:**
