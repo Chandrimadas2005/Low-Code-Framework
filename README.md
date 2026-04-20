@@ -13,14 +13,38 @@ This project follows a **structured two-stage workflow**:
 
 ```
 Time Series Dataset
-        ↓
-EDA & Preprocessing (Time_series_EDA.py)
-        ↓
-Cleaned Time Series Data (cleaned_timeseries.csv)
-        ↓
+→ sample_timeseries.csv
+            ↓
+EDA & Visualization (Time_series_EDA.py)
+→ Time parsing & sorting
+→ Auto frequency detection & resampling
+→ Missing value handling (interpolation, forward/backward fill)
+→ Trend & seasonality extraction (seasonal decomposition)
+→ Residual-based outlier detection (IQR on residuals)
+→ Stationarity check (ADF test)
+→ Linear detrending (if non-stationary)
+→ Rolling average smoothing
+→ Window-based statistical analysis (mean, variance, std deviation)
+            ↓
+Cleaned Dataset
+→ cleaned_timeseries.csv
+            ↓
 Forecasting Models (Forecasting_models.py)
-        ↓
-Predictions & Visualization
+→ Train-test split (last 20%)
+→ Auto frequency inference
+→ ARIMA / SARIMA / SARIMAX (AIC-based tuning)
+→ Holt-Winters (Triple Exponential Smoothing)
+→ Rolling EWMA forecasting
+→ VAR (multivariate forecasting)
+→ Deep learning models (RNN, LSTM, GRU, TCN)
+→ Multi-step recursive forecasting
+            ↓
+Prediction & Evaluation
+→ MAE-based validation
+→ Observed vs forecast visualization
+→ Multi-series plotting (for VAR)
+→ Forecasted future values
+→ Advanced visualization (in progress)
 ```
 
 👉 **Key Idea:**
@@ -212,3 +236,7 @@ Date, Value, Exogenous1, Exogenous2
 
 ---
 
+## 📄 License
+ 
+This project is proprietary and confidential. Unauthorized use, copying, or distribution is strictly prohibited.
+Internal / proprietary — Calsoft Pvt Ltd.
